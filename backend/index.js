@@ -1,7 +1,9 @@
 const express = require("express")
 const multer  = require('multer')
+const cors = require("cors")
 
 const app=express()
+app.use(cors())
 app.use(express.json())
 
 const storage = multer.diskStorage({
@@ -16,19 +18,12 @@ const storage = multer.diskStorage({
   const upload = multer({ storage })
 
   app.post("/single",upload.single("image") ,(req, res)=> {
-    console.log(req.file)
+    console.log(req.file.filename)
     res.json({
         message: "The image has been received"
-    })
+    });
   })
 
-app.listen(8080,async() =>{
-    try{
-        console.log("Database is connected")
-
-    }catch(error){
-        console.log("error in connecting")
-
-    }
-    
+app.listen(8080,() =>{
+    console.log("App listening on port 8080");
 })
