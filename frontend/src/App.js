@@ -1,32 +1,14 @@
-import { useState } from "react"
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
 
-function App(){
-    const [img, setImg] = useState();
-    const formdata = new FormData()
-
-    formdata.append("image", img)
-
-    const handleClick = () => {
-        fetch("http://localhost:8080/single", {
-            method: "POST",
-            body: formdata,
-        })
-          .then((res) => {
-            console.log(res.message)
-          })
-          .catch((err) => {
-            console.log(err)
-          })
-    }
-
-    return (
-        <div>
-            <h1>Upload Image</h1>
-            <input onChange={(e) => setImg(e.target.files[0])}  type="file"/>
-            <br />
-            <button onClick={ handleClick }>Submit</button>
-        </div>
-    )
-}
+const App = () => {
+  return (
+    <div className="bg-gradient-to-r from-[#12131E] via-[#6d28d9] to-[#1F2242] min-h-screen text-white">
+      <Navbar />
+      <HeroSection />
+    </div>
+  );
+};
 
 export default App
