@@ -20,7 +20,7 @@ const Examine = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-[#12131E] via-[#6d28d9] to-[#1F2242">
       <div className="bg-gray-800 text-center p-10 rounded-lg shadow-lg w-2/3 max-w-md">
         <h1 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 mb-4">
           Examine the <span className="text-blue-400">image</span>
