@@ -35,6 +35,7 @@ export default function Pricing() {
         "Unlimited Page Unlock",
         "Custom Branding",
         "24/7 Support",
+        
       ],
     }
   ];
