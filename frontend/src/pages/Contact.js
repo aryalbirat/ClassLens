@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaFacebookF, FaLinkedinIn, FaReact, FaInstagramSquare, FaNode } from "react-icons/fa";
 
 function Contact() {
     return (
