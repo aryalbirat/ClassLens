@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import Examine from "./pages/Examine";
 import Team from "./pages/Team";
 import Pricing from "./pages/Pricing";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -11,10 +11,11 @@ const App = () => {
       <Navbar />
       <Home />
       <Examine />  
-      <Team></Team>    
+      <Team />    
       <Pricing/>
+      <Examine />
     </div>
   );
 };
 
-export default App
+export default App;
