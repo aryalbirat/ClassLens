@@ -2,7 +2,7 @@ import React from 'react';
 
 const PriceCard = ({ title, description, price, period, features }) => {
   return (
-    <div className="ml-16 border rounded-md p-6 hover:shadow-lg transition-shadow bg-black text-white w-64 h-auto">
+    <div className="ml-16 border rounded-md p-6 hover:scale-105 bg-gradient-to-r from-[#26303f] to-[#0c2e59] text-white w-64 h-auto">
       <h3 className="text-white text-xl font-semibold mb-2">{title}</h3>
       <p className="text-sm text-gray-400">{description}</p>
       <div className="mt-6">
