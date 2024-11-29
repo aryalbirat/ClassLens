@@ -13,7 +13,6 @@ const App = () => {
       <Examine />  
       <Team />    
       <Pricing/>
-      <Examine />
     </div>
   );
 };
