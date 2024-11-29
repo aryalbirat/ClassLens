@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Examine = () => {
   const [img, setImg] = useState(null);
-  const [imgPreview, setImgPreview] = useState(null); // To store the preview URL
+  const [imgPreview, setImgPreview] = useState(null); 
   const [notification, setNotification] = useState("");
   const [selectedImageName, setSelectedImageName] = useState("");
   const [beResponse, setBeResponse] = useState("");
@@ -22,14 +22,14 @@ const Examine = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        setNotification("Image uploaded successfully!"); // Set success message
-        setTimeout(() => setNotification(""), 3000); // Clear notification after 3 seconds
+        setNotification("Image uploaded successfully!"); 
+        setTimeout(() => setNotification(""), 3000); 
         console.log(data.message || "Image uploaded successfully!");
         setBeResponse(data);
       })
       .catch((err) => {
-        setNotification("Error uploading image."); // Set error message
-        setTimeout(() => setNotification(""), 3000); // Clear notification after 3 seconds
+        setNotification("Error uploading image."); 
+        setTimeout(() => setNotification(""), 3000); 
         console.error("Error:", err);
       });
   };
