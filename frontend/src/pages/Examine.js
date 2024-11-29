@@ -38,7 +38,8 @@ const Examine = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-[#000000] to-[#2d62a2]">
+    <setion id="examine">
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-[#000000] to-[#2d62a2]">
       <div className="grid grid-cols-2 mt-15 justify-center h-[30rem] w-[90rem] items-center bg-gray-800 rounded-lg shadow-lg m-10 p-10 relative">
         
         <div
@@ -99,6 +100,7 @@ const Examine = () => {
         </div>
       </div>
     </div>
+    </setion>
   );
 };
 
