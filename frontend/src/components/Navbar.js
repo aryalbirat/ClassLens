@@ -29,9 +29,11 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <button className="relative flex justify-center items-center w-[150px] h-[40px] p-[10px] gap-[8px] bg-gradient-to-r from-[#7732FF] to-[#8862c2] border border-[#2C2C2C] rounded-lg text-white text-[18px] font-normal leading-none shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:opacity-80 hover:cursor-pointer">
-        Contact Us
-      </button>
+      <Link to="contact" smooth={true} duration={500}>
+        <button className="relative flex justify-center items-center w-[150px] h-[40px] p-[10px] gap-[8px] bg-gradient-to-r from-[#7732FF] to-[#8862c2] border border-[#2C2C2C] rounded-lg text-white text-[18px] font-normal leading-none shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:opacity-80 hover:cursor-pointer">
+          Contact Us
+        </button>
+      </Link>
     </nav>
   );
 };

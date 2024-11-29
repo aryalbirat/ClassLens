@@ -45,7 +45,7 @@ export default function Pricing() {
   return (
     <section id="pricing">
       <div className="bg-gradient-to-r from-[#000000] to-[#2d62a2]">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center pt-20">
           <h1 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-800 mb-4 text-center">
             Our <span className="text-blue-400">Pricing</span>
           </h1>
