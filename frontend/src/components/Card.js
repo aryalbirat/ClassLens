@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 
 const Card = (props) => {
     return (
@@ -16,12 +18,34 @@ const Card = (props) => {
                 </h4>
             </div>
             <div className="flex justify-center p-6 pt-2 gap-3">
-                <button className="relative flex justify-center items-center w-[150px] h-[40px] p-[10px] gap-[8px] bg-gradient-to-r from-[#7732FF] to-[#8862c2] border border-[#2C2C2C] rounded-lg text-white text-[18px] font-normal leading-none shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:opacity-80 hover:cursor-pointer">
-                    Follow
-                </button>
-            </div>
+
+        <div className="flex gap-4">
+          {facebook && (
+            <a href={facebook} target="_blank" rel="noopener noreferrer">
+              <span className="bannerIcon">
+                <FaFacebookF />
+              </span>
+            </a>
+          )}
+          {linkedin && (
+            <a href={linkedin} target="_blank" rel="noopener noreferrer">
+              <span className="bannerIcon">
+                <FaLinkedinIn />
+              </span>
+            </a>
+          )}
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <span className="bannerIcon">
+                <BsGithub />
+              </span>
+            </a>
+          )}
+
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Card;

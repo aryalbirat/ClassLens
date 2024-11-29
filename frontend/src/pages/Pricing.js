@@ -41,6 +41,7 @@ export default function Pricing() {
   ];
 
   return (
+    <section id="pricing">
     <div className="bg-gradient-to-r from-[#000000] to-[#2d62a2]">
       {/* Title Section */}
       <div className="flex flex-col justify-center items-center pt-32">
@@ -49,12 +50,11 @@ export default function Pricing() {
         </h1>
       </div>
 
-      {/* Description */}
+
       <p className="text-xl pt-5 text-white my-3 max-w-3xl mx-auto text-center">
         We are highly skilled individuals specializing in various fields of technology.
       </p>
 
-      {/* Pricing Cards */}
       <div className="flex justify-center space-x-8 pt-10">
         {pricingPlans.map((plan, index) => (
           <PriceCard
@@ -68,5 +68,6 @@ export default function Pricing() {
         ))}
       </div>
     </div>
+</section>
   );
 }

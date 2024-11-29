@@ -4,6 +4,7 @@ import Examine from "./pages/Examine";
 import Team from "./pages/Team";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Examine />  
       <Team />    
       <Pricing/>
+      <Contact />
     </div>
   );
 };
