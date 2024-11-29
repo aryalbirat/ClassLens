@@ -50,13 +50,13 @@ const Examine = () => {
           />
           <label
             htmlFor="file-upload"
-            className="px-6 py-2 mb-4 mt-4 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg hover:from-blue-600 hover:to-purple-700"
+            className="px-6 py-2 mb-4 mt-4 text-lg font-medium text-white bg-gradient-to-r from-[#7732FF] to-[#8862c2] rounded-lg hover:opacity-70 hover:cursor-pointer"
           >
             Upload
           </label>
           <button
             onClick={handleClick}
-            className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500 text-white font-semibold py-2 px-6 rounded-lg transition duration-300"
+            className="bg-gradient-to-r from-[#006aff] to-[#31838d] hover:opacity-70 hover:cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition duration-300"
           >
             Submit
           </button>
