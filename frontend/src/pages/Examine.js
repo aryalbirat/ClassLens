@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Examine = () => {
   const [img, setImg] = useState(null);
+  const [notification, setNotification] = useState(""); // State for notification message
+  const [selectedImageName, setSelectedImageName] = useState(""); // State for image name display
 
   const handleClick = () => {
     if (!img) {
@@ -18,15 +20,25 @@ const Examine = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        setNotification("Image uploaded successfully!"); // Set success message
+        setTimeout(() => setNotification(""), 3000); // Clear notification after 3 seconds
         console.log(data.message || "Image uploaded successfully!");
       })
       .catch((err) => {
+        setNotification("Error uploading image."); // Set error message
+        setTimeout(() => setNotification(""), 3000); // Clear notification after 3 seconds
         console.error("Error:", err);
       });
   };
 
+  const handleImageSelect = (e) => {
+    const selectedFile = e.target.files[0];
+    setImg(selectedFile);
+    setSelectedImageName(selectedFile ? selectedFile.name : "No image selected");
+  };
+
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gradient-to-r   from-[#000000]  to-[#2d62a2]">
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-[#000000] to-[#2d62a2]">
       <div className="grid grid-cols-2 mt-15 justify-center h-[30rem] w-[90rem] items-center bg-gray-800 rounded-lg shadow-lg m-10 p-10 relative">
         
         <div
@@ -42,9 +54,12 @@ const Examine = () => {
             Examine <span className="text-blue-400">the image</span>
           </h1>
           <p className="text-gray-400 mb-6">Upload the image below to examine it</p>
+          
+          <p className="text-white text-lg font-medium mb-4 italic">{selectedImageName}</p>
+
           <input
             type="file"
-            onChange={(e) => setImg(e.target.files[0])}
+            onChange={handleImageSelect}
             className="hidden"
             id="file-upload"
           />
@@ -60,6 +75,18 @@ const Examine = () => {
           >
             Submit
           </button>
+
+          {notification && (
+            <div
+              className={`mt-4 px-6 py-3 rounded-lg text-white font-semibold transition duration-300 ${
+                notification.includes("Error")
+                  ? "text-red-500"
+                  : "text-green-500"
+              }`}
+            >
+              {notification}
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col justify-center items-center">
