@@ -54,6 +54,7 @@ const Examine = () => {
             }}
           ></div>
 
+<<<<<<< HEAD
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 mb-4">
               Examine <span className="text-blue-400">the image</span>
@@ -61,6 +62,26 @@ const Examine = () => {
             <p className="text-gray-400 mb-6">Upload the image below to examine it</p>
             
             <p className="text-white text-lg font-medium mb-4 italic">{selectedImageName}</p>
+=======
+          <input
+            type="file"
+            onChange={handleImageSelect}
+            className="hidden"
+            id="file-upload"
+          />
+          <label
+            htmlFor="file-upload"
+            className="px-6 py-2 mb-4 mt-4 text-lg font-medium text-white bg-gradient-to-r from-[#7732FF] to-[#8862c2] rounded-lg hover:opacity-70 hover:cursor-pointer"
+          >
+            Upload
+          </label>
+          <button
+            onClick={handleClick}
+            className="bg-gradient-to-r from-[#006aff] to-[#31838d] hover:opacity-70 hover:cursor-pointer text-white font-semibold py-2 px-6 rounded-lg transition duration-300"
+          >
+            Submit
+          </button>
+>>>>>>> 09473ee397fda41c969967d5a0b2c3c7f0e143da
 
             <input
               type="file"
