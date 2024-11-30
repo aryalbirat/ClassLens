@@ -40,6 +40,7 @@ const Team = () => {
               linkedin="https://www.linkedin.com/in/dipesh-dc-25a140248/"
               github="https://github.com/dipeshdc"
             />
+            
             <Card
               name="Pranav Subedi"
               src={pranavImage}
