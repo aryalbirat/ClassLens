@@ -52,7 +52,7 @@ export default function Pricing() {
 
 
       <p className="text-xl pt-5 text-white my-3 max-w-3xl mx-auto text-center">
-        We are highly skilled individuals specializing in various fields of technology.
+        Choose the pricing plan that best suits your needs.
       </p>
 
       <div className="flex justify-center space-x-8 pt-10">
