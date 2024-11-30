@@ -3,11 +3,11 @@ import React from 'react';
 function Contact() {
     return (
         <section id="contact">
-            <div className="min-h-screen bg-gradient-to-r pt-20  from-[#000000]  to-[#2d62a2] flex flex-col justify-center items-center">
+            <div className="min-h-screen bg-gradient-to-r pt-20  from-[#000000]  to-[#2d62a2] flex flex-col justify-center items-center pb-8">
                 <h1 className="text-4xl font-bold text-center text-gradient bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent mb-6">
                     Contact Us
                 </h1>
-                <div className="bg-gradient-to-br from-gray-800 to-indigo-900 p-8 rounded-lg shadow-lg w-full max-w-md">
+                <div className="bg-gradient-to-br  from-[#26303f] to-[#0c2e59] p-8 rounded-lg shadow-lg w-full max-w-md">
                     <form className="space-y-4">
                         <div>
                             <label className="block text-gray-300 text-sm font-semibold" htmlFor="name">
@@ -66,7 +66,7 @@ function Contact() {
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-2 rounded-md bg-gradient-to-r from-purple-500 to-blue-600 text-white font-bold hover:opacity-90 transition"
+                            className="w-full py-2 rounded-md bg-gradient-to-r from-[#7732FF] to-[#8862c2] text-white font-bold hover:opacity-90 transition"
                         >
                             Send Message
                         </button>
