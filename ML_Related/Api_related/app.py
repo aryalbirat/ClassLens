@@ -45,7 +45,7 @@ async def predict(file: UploadFile = File(...)):
         if image is None:
             raise HTTPException(status_code=400, detail="Invalid image file")
 
-        results = model.predict(source=image, save=False, conf=0.23)
+        results = model.predict(source=image, save=False, conf=0.3)
 
         attentive_students, total_students, attentiveness_percentage = calculate_attentiveness(results)
 
