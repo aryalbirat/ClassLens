@@ -12,8 +12,7 @@ def calculate_attentiveness(results):
     total_students = 0
 
     for result in results:
-        boxes = result.boxes
-
+        boxes = result.boxes  
     for cls in boxes.cls:
         class_id = int(cls.item())
         total_students += 1
